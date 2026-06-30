@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop Veterinário Extra Plus</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#fdf7ff;
+      color:#444;
+    }
+
+    header{
+      background:linear-gradient(90deg,#ff9ecb,#a8d8ff);
+      color:white;
+      text-align:center;
+      padding:30px;
+    }
+
+    header h1{
+      font-size:40px;
+    }
+
+    header p{
+      margin-top:10px;
+      font-size:18px;
+    }
+
+    nav{
+      background:#ffffff;
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      padding:15px;
+      box-shadow:0 2px 5px rgba(0,0,0,.1);
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#ff5fa2;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:#5daeff;
+    }
+
+    .banner{
+      text-align:center;
+      padding:50px 20px;
+      background:#eaf7ff;
+    }
+
+    .banner h2{
+      color:#ff5fa2;
+      margin-bottom:15px;
+    }
+
+    .banner p{
+      max-width:700px;
+      margin:auto;
+      font-size:18px;
+    }
+
+    .servicos{
+      max-width:1000px;
+      margin:40px auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      padding:20px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      padding:20px;
+      text-align:center;
+      box-shadow:0 0 10px rgba(0,0,0,.1);
+    }
+
+    .card h3{
+      color:#5daeff;
+      margin-bottom:10px;
+    }
+
+    .card button{
+      margin-top:15px;
+      background:#ff7eb8;
+      color:white;
+      border:none;
+      padding:10px 20px;
+      border-radius:8px;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+    .card button:hover{
+      background:#5daeff;
+    }
+
+    footer{
+      margin-top:40px;
+      background:#a8d8ff;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🐾 Pet Shop Veterinário Extra Plus</h1>
+  <p>Cuidando do seu melhor amigo com carinho e dedicação.</p>
+</header>
+
+<nav>
+  <a href="#">Início</a>
+  <a href="#">Serviços</a>
+  <a href="#">Produtos</a>
+  <a href="#">Contato</a>
+</nav>
+
+<section class="banner">
+  <h2>Bem-vindo ao Extra Plus!</h2>
+  <p>
+    Atendimento veterinário, banho e tosa, vacinação,
+    consultas, exames e uma loja completa para cães e gatos.
+  </p>
+</section>
+
+<section class="servicos">
+
+  <div class="card">
+    <h3>🩺 Consultas Veterinárias</h3>
+    <p>Atendimento com profissionais especializados.</p>
+    <button>Agendar</button>
+  </div>
+
+  <div class="card">
+    <h3>🛁 Banho e Tosa</h3>
+    <p>Seu pet limpo, cheiroso e feliz.</p>
+    <button>Agendar</button>
+  </div>
+
+  <div class="card">
+    <h3>💉 Vacinação</h3>
+    <p>Proteção completa para seu melhor amigo.</p>
+    <button>Agendar</button>
+  </div>
+
+  <div class="card">
+    <h3>🦴 Loja Pet</h3>
+    <p>Rações, brinquedos, medicamentos e acessórios.</p>
+    <button>Comprar</button>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Pet Shop Veterinário Extra Plus</p>
+  <p>📞 (00) 0000-0000 | 📍 Sua Cidade</p>
+</footer>
+
+<script>
+const botoes = document.querySelectorAll("button");
+
+botoes.forEach(botao => {
+  botao.addEventListener("click", () => {
+    alert("Obrigado! Em breve entraremos em contato.");
+  });
+});
+</script>
+
+</body>
+</html>
